@@ -41,15 +41,154 @@
 
 // getMilk(10);
 
+////////////////////// LIFE CALCULATOR /////////////////
+// function lifeInWeeks(age) {
 
-function lifeInWeeks(age) {
+//   var yearsRemaining = 90 - age;
+//   var lifeDays = yearsRemaining * 365;
+//   var lifeWeeks = yearsRemaining * 52;
+//   var lifeMonths = yearsRemaining *12;
 
-  var yearsRemaining = 90 - age;
-  var lifeDays = yearsRemaining * 365;
-  var lifeWeeks = yearsRemaining * 52;
-  var lifeMonths = yearsRemaining *12;
+//   console.log("You have " + lifeDays  + " days, " + lifeWeeks + " weeks, and " + lifeMonths + " months left.")
+// }
 
-  console.log("You have " + lifeDays  + " days, " + lifeWeeks + " weeks, and " + lifeMonths + " months left.")
+// lifeInWeeks(28);
+///////////////////////////////////////////////////////
+
+
+///////////////// UPDATED GET MILK ////////////////////////
+// function getMilk(money, costPerBottle) {   
+//   console.log("leaveHouse");
+//   console.log("moveRight");
+//   console.log("moveRight");
+//   console.log("moveUp");
+//   console.log("moveUp");
+//   console.log("moveUp");
+//   console.log("moveUp");
+//   console.log("moveRight");
+//   console.log("moveRight");
+
+//   console.log("Buy " + calcBottles(money, costPerBottle) + " bottles of milk");
+
+//   console.log("moveLeft");
+//   console.log("moveLeft");
+//   console.log("moveDown");
+//   console.log("moveDown");
+//   console.log("moveDown");
+//   console.log("moveDown");
+//   console.log("moveLeft");
+//   console.log("moveLeft");
+//   console.log("enterHouse");
+
+//   return calcChange(money, costPerBottle);
+ 
+// } 
+
+// function calcBottles(startingMoney, costPerBottle) {
+//   var numberOfBottles =  Math.floor(startingMoney / costPerBottle);
+//   return numberOfBottles;
+// }
+
+// function calcChange(startingAmount, costPerBottle) {
+//   var change = startingAmount % costPerBottle;
+//   return change;
+// }
+
+// getMilk(6, 1.5);
+
+// console.log("Here are your " + getMilk(5, 1.5) + " of milk. You have " + calcChange + " of change.");
+
+
+// function getMilk(money) {   
+//   console.log("leaveHouse");
+//   console.log("moveRight");
+//   console.log("moveRight");
+//   console.log("moveUp");
+//   console.log("moveUp");
+//   console.log("moveUp");
+//   console.log("moveUp");
+//   console.log("moveRight");
+//   console.log("moveRight");
+
+//   var numBottles = Math.floor(money / 1.5);
+
+//   console.log("Buy " + numBottles + " of milk");
+
+//   console.log("moveLeft");
+//   console.log("moveLeft");
+//   console.log("moveDown");
+//   console.log("moveDown");
+//   console.log("moveDown");
+//   console.log("moveDown");
+//   console.log("moveLeft");
+//   console.log("moveLeft");
+//   console.log("enterHouse");
+
+//   return money % 1.5;
+ 
+// } 
+// getMilk(10);
+
+
+
+
+// function getMilk(money, costPerBottle) {   
+//   console.log("leaveHouse");
+//   console.log("moveRight");
+//   console.log("moveRight");
+//   console.log("moveUp");
+//   console.log("moveUp");
+//   console.log("moveUp");
+//   console.log("moveUp");
+//   console.log("moveRight");
+//   console.log("moveRight");
+
+//   console.log("Your money is $" + money + ". You can buy " + calcBottles(money, costPerBottle) + " bottles of milk. You have a change of " + calcChange(money,costPerBottle) + "$.");
+
+//   console.log("moveLeft");
+//   console.log("moveLeft");
+//   console.log("moveDown");
+//   console.log("moveDown");
+//   console.log("moveDown");
+//   console.log("moveDown");
+//   console.log("moveLeft");
+//   console.log("moveLeft");
+//   console.log("enterHouse");
+
+//   return calcChange(money, costPerBottle);
+// } 
+
+// function calcBottles(startingMoney, costPerBottle) {
+//   var bottles = Math.floor(startingMoney / costPerBottle);
+//   return bottles;
+// }
+
+// function calcChange(startingAmount, costPerBottle) {
+//   var change = startingAmount % costPerBottle;
+//   return change;
+// }
+
+
+// console.log ("Here are your " + getMilk(10, 1.5) + " milk and a change of " + calcChange(10, 1.5));
+
+
+////////////// BMI CALCULATOR ///////////////////////////
+
+//Create your function below this line.
+//The first parameter should be the weight and the second should be the height.
+
+function bmiCalculator(weight, height) {
+  var calcBMI = Math.floor(weight / (height * height));
+  return calcBMI;
 }
 
-lifeInWeeks(28);
+var bmi = bmiCalculator(65, 1.8);
+console.log(bmi);
+
+/* If my weight is 65Kg and my height is 1.8m, I should be able to call your function like this:
+
+var bmi = bmiCalculator(65, 1.8); 
+
+bmi should equal 20 when it's rounded to the nearest whole number.
+
+*/
