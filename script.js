@@ -44,10 +44,10 @@
 
 function lifeInWeeks(age) {
 
-  var oldAge = 90;
-  var lifeDays = (oldAge - age)* 365;
-  var lifeWeeks = (oldAge - age)* 52;
-  var lifeMonths = (oldAge - age)*12;
+  var yearsRemaining = 90 - age;
+  var lifeDays = yearsRemaining * 365;
+  var lifeWeeks = yearsRemaining * 52;
+  var lifeMonths = yearsRemaining *12;
 
   console.log("You have " + lifeDays  + " days, " + lifeWeeks + " weeks, and " + lifeMonths + " months left.")
 }
