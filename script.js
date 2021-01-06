@@ -17,26 +17,39 @@
 // alert("You dog is " + dogAge + " years old and it is " + humanAge + " years old in humans age." );
 
 
-function getMilk(bottles) {   
-  console.log("leaveHouse");
-  console.log("moveRight");
-  console.log("moveRight");
-  console.log("moveUp");
-  console.log("moveUp");
-  console.log("moveUp");
-  console.log("moveUp");
-  console.log("moveRight");
-  console.log("moveRight");
-  console.log("buy " + bottles + " bottles of milk");
-  console.log("moveLeft");
-  console.log("moveLeft");
-  console.log("moveDown");
-  console.log("moveDown");
-  console.log("moveDown");
-  console.log("moveDown");
-  console.log("moveLeft");
-  console.log("moveLeft");
-  console.log("enterHouse");
-} 
+// function getMilk(money) {   
+//   console.log("leaveHouse");
+//   console.log("moveRight");
+//   console.log("moveRight");
+//   console.log("moveUp");
+//   console.log("moveUp");
+//   console.log("moveUp");
+//   console.log("moveUp");
+//   console.log("moveRight");
+//   console.log("moveRight");
+//   console.log("Your money is $" + money + ". You can buy " + Math.floor(money / 1.5) + " bottles of milk");
+//   console.log("moveLeft");
+//   console.log("moveLeft");
+//   console.log("moveDown");
+//   console.log("moveDown");
+//   console.log("moveDown");
+//   console.log("moveDown");
+//   console.log("moveLeft");
+//   console.log("moveLeft");
+//   console.log("enterHouse");
+// } 
 
-getMilk(12);
+// getMilk(10);
+
+
+function lifeInWeeks(age) {
+
+  var oldAge = 90;
+  var lifeDays = (oldAge - age)* 365;
+  var lifeWeeks = (oldAge - age)* 52;
+  var lifeMonths = (oldAge - age)*12;
+
+  console.log("You have " + lifeDays + " days, " + lifeWeeks + " weeks, and " + lifeMonths + " months left.")
+}
+
+lifeInWeeks(28);
