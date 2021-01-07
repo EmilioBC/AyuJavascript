@@ -211,25 +211,36 @@ bmi should equal 20 when it's rounded to the nearest whole number.
 //Create your function below this line.
 //The first parameter should be the weight and the second should be the height.
 
-function bmiCalculator(weight, height) {
-   var bmi = Math.floor(weight / (height * height));
-   var interpretation; 
+// function bmiCalculator(weight, height) {
+//    var bmi = Math.floor(weight / (height * height));
+//    var interpretation; 
 
-    if (bmi < 18.5) {
-      interpretation = ("Your BMI is " + bmi + ", so you are underweight."  );
-    } 
-    if (bmi >= 18.5 && bmi <= 24.9) {
-      interpretation = ("Your BMI is " + bmi + ", so you have a normal weight.");
-    }
-    if (bmi > 24.9) {
-      interpretation = ("Your BMI is " + bmi + ", so you are overweight.");
-    }
-    return interpretation;
-}
+//     if (bmi < 18.5) {
+//       interpretation = ("Your BMI is " + bmi + ", so you are underweight."  );
+//     } 
+//     if (bmi >= 18.5 && bmi <= 24.9) {
+//       interpretation = ("Your BMI is " + bmi + ", so you have a normal weight.");
+//     }
+//     if (bmi > 24.9) {
+//       interpretation = ("Your BMI is " + bmi + ", so you are overweight.");
+//     }
+//     return interpretation;
+// }
 
- alert(bmiCalculator(60, 2));
+//  alert(bmiCalculator(60, 2));
 
 
 /* If my weight is 65Kg and my height is 1.8m, I should be able to call your function like this:
 */
 // var bmi = bmiCalculator(65, 1.8); 
+
+function isLeap(year) {
+
+  if (year % 400 === 0 || year % 4 === 0 && year % 100 !== 0){
+    return("Leap year.");
+  } else {
+    return("Not leap year.");
+  }
+}
+
+console.log(isLeap(1998));
