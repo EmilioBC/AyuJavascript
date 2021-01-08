@@ -234,13 +234,28 @@ bmi should equal 20 when it's rounded to the nearest whole number.
 */
 // var bmi = bmiCalculator(65, 1.8); 
 
-function isLeap(year) {
+// function isLeap(year) {
 
-  if (year % 400 === 0 || year % 4 === 0 && year % 100 !== 0){
-    return("Leap year.");
-  } else {
-    return("Not leap year.");
-  }
-}
+//   if (year % 400 === 0 || year % 4 === 0 && year % 100 !== 0){
+//     return("Leap year.");
+//   } else {
+//     return("Not leap year.");
+//   }
+// }
 
-console.log(isLeap(1998));
+// console.log(isLeap(1998));
+
+///////////////////////////////////////////////
+
+////////////// GUEST LIST ARRAY //////////////
+
+// var guestList = ["Angela","Jack","Emilio","Beth","James","Lara","Jason"];
+// var guest = prompt("What is the name?");
+
+// if (guestList.includes(guest)) {
+//   alert("Welcome " + guest);
+// } else {
+//   alert("Not in the guest list. Maybe next time");
+// }
+
+//////////////////////////////////////////////////////////
