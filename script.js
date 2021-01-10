@@ -261,24 +261,24 @@ bmi should equal 20 when it's rounded to the nearest whole number.
 //////////////////////////////////////////////////////////
 
 
-var output = [];
-var count = 1;
+// var output = [];
+// var count = 1;
 
-function fizzBuzz() {
+// function fizzBuzz() {
 
-  if (count % 3 === 0 && count % 5 === 0) {
-    output.push("FizzBuzz");
-  } else if (count % 3 === 0) {
-    output.push("Fizz");
-  } else if (count % 5 === 0) {
-    output.push("Buzz"); 
-  } else {
-    output.push(count);
-  }
+//   if (count % 3 === 0 && count % 5 === 0) {
+//     output.push("FizzBuzz");
+//   } else if (count % 3 === 0) {
+//     output.push("Fizz");
+//   } else if (count % 5 === 0) {
+//     output.push("Buzz"); 
+//   } else {
+//     output.push(count);
+//   }
 
-  count++;
+//   count++;
 
-  console.log(output);
+//   console.log(output);
 
   // if (count % 5 === 0) {
   //   count = ("Buzz");
@@ -287,4 +287,21 @@ function fizzBuzz() {
   //   count = ("FizzBuzz");
   // }
   // return;
-}
+// }
+
+
+////////////// WHO IS GOING TO BUY LUNCH?//////////////////////
+
+function whosPaying(names) {
+    
+  /******Don't change the code above*******/
+      
+      //Write your code here.
+      
+  var payer = []  
+      
+      
+  
+  
+  /******Don't change the code below*******/    
+  }
