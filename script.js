@@ -325,17 +325,55 @@ bmi should equal 20 when it's rounded to the nearest whole number.
 
 //////////// 99 BOTTLES OF BEER CHALLENGE /////////////
 
-var count = 100;
+// var count = 100;
 
-function beer() {
+// function beer() {
 
-  while (count >= 1) {
+//   while (count >= 1) {
 
-    console.log(`${count} bottles of beer on the wall, ${count} bottles of beer Take one down and pass it around, ${count - 1} bottles of beer on the wall`);
+//     console.log(`${count} bottles of beer on the wall, ${count} bottles of beer Take one down and pass it around, ${count - 1} bottles of beer on the wall`);
 
-    count--;
+//     count--;
+//   }
+//   console.log("No more bottles of beer on the wall, no more bottles of beer, Go to the store and buy some more, 99 bottles of beer on the wall");
+// }
+
+// beer();
+
+///////////////////// FOR LOOP ////////////////////////
+
+// function beer() {
+
+//   for(count = 100; count > 0; count--) {
+
+//     console.log(`${count} bottles of beer on the wall, ${count} bottles of beer Take one down and pass it around, ${count - 1} bottles of beer on the wall`);
+
+//   }
+//   console.log("No more bottles of beer on the wall, no more bottles of beer, Go to the store and buy some more, 99 bottles of beer on the wall");
+// }
+
+// beer();
+
+
+///////////////////// FIBONACCI CHALLENGE ///////////////////////
+
+function fibonacciGenerator (n) {
+
+  var output = [];
+
+  if(n === 1) {
+    output = [0];
+  } else if (n === 2) {
+    output = [0, 1];
+  } else {
+    output = [0, 1];
+
+    for (var i = 2; i < n; i++) {
+      output.push(output[output.length - 2] + output[output.length - 1]);
+    }
   }
-  console.log("No more bottles of beer on the wall, no more bottles of beer, Go to the store and buy some more, 99 bottles of beer on the wall");
+  return output;
+      
 }
 
-beer();
+  console.log(fibonacciGenerator(10));
