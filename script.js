@@ -292,16 +292,50 @@ bmi should equal 20 when it's rounded to the nearest whole number.
 
 ////////////// WHO IS GOING TO BUY LUNCH?//////////////////////
 
-function whosPaying(names) {
+// function whosPaying(names) {
     
   /******Don't change the code above*******/
       
       //Write your code here.
+
+//   var numberOfPeople = names.length;
+
+//   var randomPersonPosition = Math.floor(Math.random() * numberOfPeople);
+
+//   var randomPerson = names[randomPersonPosition];
+
+//   return randomPerson + " is going to buy the lunch today!";
       
-  var payer = []  
-      
-      
-  
-  
-  /******Don't change the code below*******/    
+//   /******Don't change the code below*******/    
+//   }
+
+// console.log(whosPaying(["Angela","Ben","Jenny","Micael","Chloe"]));
+
+
+////////////////////// WHILE LOOPS ///////////////////////
+// var output = [];
+// var count = 1;
+
+// while(count <= 100) {
+
+//   output.push(count);
+//   count++
+// }
+// console.log(count);
+
+//////////// 99 BOTTLES OF BEER CHALLENGE /////////////
+
+var count = 100;
+
+function beer() {
+
+  while (count >= 1) {
+
+    console.log(`${count} bottles of beer on the wall, ${count} bottles of beer Take one down and pass it around, ${count - 1} bottles of beer on the wall`);
+
+    count--;
   }
+  console.log("No more bottles of beer on the wall, no more bottles of beer, Go to the store and buy some more, 99 bottles of beer on the wall");
+}
+
+beer();
